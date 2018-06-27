@@ -1,0 +1,9 @@
+- PostCSS + PostCSS-preset-env
+- Pug
+- Browser-sync
+- Babel
+- production / dev
+- csso
+- concat
+- uglify
+- plumber

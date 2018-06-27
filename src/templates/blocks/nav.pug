@@ -1,0 +1,10 @@
+-
+  var navs = { 
+    "projects": "/projects",
+    "contacts": "/contacts"
+  }
+
+ul.main-nav__list
+  each link, title in navs
+    li.main-nav__item
+      a(href=link class="main-nav__link")=title

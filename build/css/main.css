@@ -1,0 +1,9 @@
+:root {
+  --light-blue: tomato;
+  --min: 90px;
+}
+#header {
+  color: --light-blue;
+  height: 90px;
+  height: var(--min);
+}
