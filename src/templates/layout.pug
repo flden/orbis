@@ -1,5 +1,6 @@
 //- layout.pug
-html
+doctype html
+html(lang="ru")
   head
     title My Site - #{title}
   block styles
@@ -9,10 +10,10 @@ html
   body
     block header
       .page-header
-        include blocks/header.pug
+        include ../blocks/header/header.pug
     block content
     block footer
       .page-footer
-        include blocks/footer.pug
+        include ../blocks/footer/footer.pug
     block scripts
       script(src='./js/swiper.min.js')

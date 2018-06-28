@@ -5,7 +5,10 @@ const gulp = require('gulp'),
       config = require('../config');
 
 gulp.task('less', () => {
-  return gulp.src(`${config.paths.src}/less/**/*.less`)
+  return gulp.src([
+    `${config.paths.src}/less/**/*.less`,
+    `${config.paths.src}/blocks/**/*.less`,
+  ])
     .pipe(plumber())
     .pipe(less({
       paths: [ path.join(__dirname, 'less', 'includes') ]
@@ -14,5 +17,8 @@ gulp.task('less', () => {
 });
 
 gulp.task('less:watch', () => {
-  gulp.watch(`${config.paths.src}/less/**/*.less`, ['less'])
+  gulp.watch([
+    `${config.paths.src}/less/**/*.less`,
+    `${config.paths.src}/blocks/**/*.less`,
+   ], ['less'])
 })
