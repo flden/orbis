@@ -5,12 +5,11 @@ const gulp = require('gulp'),
 
 gulp.task('pug', function buildHTML() {
   return gulp.src([
-    `${config.paths.src}/templates/**/*.pug`,
-    `${config.paths.src}/blocks/**/*.pug`
+    `${config.paths.src}/templates/*.pug`
   ])
   .pipe(plumber())
   .pipe(pug({
-    pretty: true
+    // pretty: true
   }))
   .pipe(
     gulp.dest(`${config.paths.build}`)

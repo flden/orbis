@@ -6,8 +6,7 @@ const gulp = require('gulp'),
 
 gulp.task('less', () => {
   return gulp.src([
-    `${config.paths.src}/less/**/*.less`,
-    `${config.paths.src}/blocks/**/*.less`,
+    `${config.paths.src}/less/main.less`
   ])
     .pipe(plumber())
     .pipe(less({

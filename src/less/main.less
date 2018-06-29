@@ -1,11 +1,7 @@
-@nice-blue: #5B83AD;
+@import "./var.less";
+@import "./mixins.less";
 
-:root {
-  --light-blue: tomato;
-  --min: 90px;
-}
-
-#header {
-  color: --light-blue;
-  height: var(--min);
-}
+@blocks: "../blocks";
+@import "@{blocks}/header/header.less";
+@import "@{blocks}/nav/nav.less";
+@import "@{blocks}/footer/footer.less";

@@ -1,12 +1,11 @@
-//- layout.pug
 doctype html
 html(lang="ru")
   head
     title My Site - #{title}
-  block styles
-    link(rel="stylesheet", href="./css/normalize.css")
-    link(rel="stylesheet", href="./css/swiper.min.css")
-    link(rel="stylesheet", href="./css/main.css")
+    block styles
+      link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
+      //- link(rel="stylesheet" href="./css/swiper.min.css")
+      link(rel="stylesheet" href="./css/main.css")
   body
     block header
       .page-header
@@ -17,3 +16,4 @@ html(lang="ru")
         include ../blocks/footer/footer.pug
     block scripts
       script(src='./js/swiper.min.js')
+      script(src="./js/main.js")
