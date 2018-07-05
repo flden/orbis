@@ -1,7 +1,6 @@
 // Example: +button(type="link", href="https://...") Click Me
 
-mixin button(title, role, type, href)
-  - var title = attributes.title;
+mixin button(role, type, href)
   - var role = attributes.role;
   - var type = attributes.type;
   - var href = attributes.href;
@@ -11,4 +10,6 @@ mixin button(title, role, type, href)
       if block
         block
   else if type === 'button'
-    button.btn=title
+    button.btn
+      if block
+        block
