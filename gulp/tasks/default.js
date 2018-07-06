@@ -6,7 +6,7 @@ gulp.task('default', function (cb){
     'pug:watch',
     // 'css:watch',
     'less:watch',
-    'babel:watch',
+    'webpack:watch',
     'server',
     cb
   );
