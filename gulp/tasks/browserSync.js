@@ -8,9 +8,9 @@ gulp.task('server', () => {
   });
 
   gulp.watch([
-    `${config.paths.src}/templates/**/*.pug`,
+    `${config.paths.src}/**/*.pug`,
     `${config.paths.src}/css/**/*.css`,
-    `${config.paths.src}/less/**/*.less`,
+    `${config.paths.src}/**/*.less`,
     `${config.paths.src}/js/**/*.js`
   ]).on('change', browserSync.reload);
 })
