@@ -1,1 +1,1 @@
-const a = 9;
+import ScrollReveal from 'scrollreveal';

@@ -1,8 +1,12 @@
-.container
-  .page-header__wrap
-    .page-header__logo.logo
-      a.logo__link(href="/")
-        .logo__img-wrap
-          img.logo__img(src="http://placehold.it/100x100", alt="")
-    nav.page-header__nav.main-nav
-      include ../nav/nav.pug
+.page-header
+  .container
+    .page-header__wrap
+      .page-header__logo
+        include ../logo/logo
+   
+      nav.page-header__nav
+        include ../nav/nav
+        +nav({
+          'Projects': '/projects',
+          'Blog': '/blog'
+        })

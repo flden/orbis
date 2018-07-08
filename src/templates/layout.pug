@@ -4,16 +4,13 @@ html(lang="ru")
     title My Site - #{title}
     block styles
       link(rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.0/normalize.min.css")
-      //- link(rel="stylesheet" href="./css/swiper.min.css")
       link(rel="stylesheet" href="./css/main.css")
   body
-    block header
-      .page-header
+    .page-wrap
+      block header
         include ../blocks/header/header.pug
-    block content
-    block footer
-      .page-footer
+      block content
+      block footer
         include ../blocks/footer/footer.pug
-    block scripts
-      script(src='./js/swiper.min.js')
-      script(src="./js/main.js")
+      block scripts
+        script(src="./js/app.min.js")
