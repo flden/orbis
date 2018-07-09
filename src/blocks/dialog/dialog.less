@@ -1,0 +1,43 @@
+.dialog {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  z-index: 100;
+  top: 0;
+  left: 0;
+  transition: 0.3s;
+  opacity: 0;
+  visibility: hidden;
+}
+
+.dialog__wrap {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+.dialog__bg {
+  width: 100%;
+  height: 100%;
+  background-color: var(--dark-opacity);
+}
+.dialog__window-wrap {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.dialog__window {
+  min-width: 320px;
+  background-color: var(--dark-color);
+  padding: 16px;
+}
+
+.dialog__header {
+  display: flex;
+}

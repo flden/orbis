@@ -1,0 +1,14 @@
+mixin dialog(className, title)
+  - var className = attributes.className
+  - var title = attributes.title
+  div(class="dialog dialog--" + className)
+    .dialog__wrap
+      .dialog__bg
+      .dialog__window-wrap
+        .dialog__window
+          .dialog__header
+            .dialog__header-title=title
+            .dialog__close-btn X
+          .dialog__content
+            if block
+              block
