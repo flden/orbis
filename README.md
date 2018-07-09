@@ -2,6 +2,8 @@
 - Pug
 - Browser-sync
 - Babel
+- Webpack
+- LESS
 - production / dev
 - csso
 - concat
