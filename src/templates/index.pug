@@ -1,7 +1,80 @@
 extends layout.pug
 
-block scripts
-  script(src='')
+include ../blocks/sidebar/page-sidebar
 
 block content
   main.page-content
+    .page-content__top
+    .container.page-content__wrap
+
+      +page-sidebar('homepage')
+      .content__wrap
+        .top-content__container
+          .top-slider__container
+            .top-slider__wrap
+              .top-slider__left-slider
+                .left-slider__container
+                  .swiper-wrapper.left-slider__wrap
+
+                    .swiper-slide.left-slider__slide
+                      .left-slider__slide-img-wrap
+                        img.left-slider__slide-img(src="./images/1.png")
+
+                    .swiper-slide.left-slider__slide
+                      .left-slider__slide-img-wrap
+                        img.left-slider__slide-img(src="./images/2.jpg")
+
+                    .swiper-slide.left-slider__slide
+                      .left-slider__slide-img-wrap
+                        img.left-slider__slide-img(src="./images/1.png")
+
+                    .swiper-slide.left-slider__slide
+                      .left-slider__slide-img-wrap
+                        img.left-slider__slide-img(src="./images/1.png")
+
+              .top-slider__right-slider
+                .right-slider__container
+                  .swiper-wrapper.right-slider__wrap
+
+                    .swiper-slide.right-slider__slide
+                      .right-slider__slide-img-wrap
+                        img.right-slider__slide-img(src="./images/1.png" alt="1")
+
+                    .swiper-slide.right-slider__slide
+                      .right-slider__slide-img-wrap
+                        img.right-slider__slide-img(src="./images/2.jpg" alt="2")
+
+                    .swiper-slide.right-slider__slide
+                      .right-slider__slide-img-wrap
+                        img.right-slider__slide-img(src="./images/1.png" alt="3")
+
+                    .swiper-slide.right-slider__slide
+                      .right-slider__slide-img-wrap
+                        img.right-slider__slide-img(src="./images/1.png" alt="4")
+
+            include ../blocks/about/about
+
+        section.solutions
+          .solutions__wrap
+            .solutions__title
+              .solutions__subtitle
+            .solutions__gallery gallery
+
+        section.form-designer
+          .title--third.form-designer__title Занимаетесь дизайном интерьера?
+          p.form-designer__desc Объект права диспозитивен. Помимо права собственности и иных вещных прав, концессия доказывает причиненный ущерб. Неустойка, как следует из теоретических исследований, экспортирует Кодекс.
+
+          .form-designer__form-wrap
+            form.form-designer
+              .input-wrap.form-designer__input-wrap
+                label(for="name") Ваше имя
+                input(type="text" name="name").input.form-designer__input
+              .input-wrap.form-designer__input-wrap
+                label(for="name") Ваша эл.почта
+                input(type="text" name="name").input.form-designer__input
+              .input-wrap.form-designer__input-wrap
+                label(for="name") Ваше сообщение
+                textarea(type="text" name="name").input.form-designer__input
+              button(type="submit").btn.btn--main Отправить
+
+

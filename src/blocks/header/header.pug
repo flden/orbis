@@ -2,11 +2,26 @@
   .container
     .page-header__wrap
       .page-header__logo
+        h3 LOGO
         include ../logo/logo
    
       nav.page-header__nav
-        include ../nav/nav
-        +nav({
-          'Projects': '/projects',
-          'Blog': '/blog'
-        })
+        ul
+          li Продукция
+            ul
+              li
+                a(href="/") Карнизы
+              li
+                a(href="/") Аксессуары
+          li О компании
+            ul
+              li
+                a(href="/") О нас
+              li
+                a(href="/") Производство
+          li
+            a(href="/") Партнёрам
+          li
+            a(href="/") Новости и статьи
+          li
+            a(href="/") Контакты

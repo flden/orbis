@@ -33,8 +33,10 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
+    "rellax": "^1.6.2",
     "scrollreveal": "^3.4.0",
-    "swiper": "^4.3.3",
-    "rellax": "^1.6.2"
+    "swiper": "^4.3.5",
+    "vue": "^2.5.17",
+    "vue-the-mask": "^0.11.1"
   }
 }
