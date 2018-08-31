@@ -29,6 +29,12 @@ p {
   line-height: 1.4;
   font-size: 13px;
 }
+.input {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  width: 100%;
+  border: 1px solid #ededed;
+}
 .hide {
   visibility: hidden;
   opacity: 0;
@@ -49,7 +55,10 @@ p {
   max-width: 1240px;
 }
 .page-content {
-  display: flex;
+  width: 100%;
+  background-color: #ebebeb;
+}
+.page-content__top {
   width: 100%;
 }
 .content__wrap {
@@ -66,6 +75,9 @@ p {
   height: 100%;
   width: 700px;
   overflow: hidden;
+}
+.solutions__wrap {
+  background-color: #ffffff;
 }
 .left-slider__slide-img {
   height: 100%;
@@ -100,7 +112,6 @@ p {
 }
 .top-slider__container {
   background-color: #ededed;
-  height: 1525px;
   width: 100%;
 }
 .right-slider__slide {
@@ -132,6 +143,11 @@ p {
 .page-sidebar__container {
   width: 30%;
   max-width: 270px;
+  position: relative;
+}
+.page-sidebar--top-fixed {
+  position: fixed;
+  top: 0;
 }
 .page-sidebar__wrap {
   width: 100%;
@@ -182,6 +198,32 @@ p {
 }
 .page-sidebar__socials {
   margin-top: 16px;
+}
+.page-sidebar__catalog {
+  margin-top: 48px;
+}
+.form-designer__wrap {
+  display: flex;
+  align-items: center;
+  padding: 16px 0;
+}
+.form-designer__img-wrap {
+  width: 100%;
+  height: auto;
+}
+.form-designer__img-wrap {
+  width: 45%;
+  height: auto;
+}
+.form-designer__content-wrap {
+  width: 55%;
+}
+.form-designer__img {
+  max-width: 100%;
+}
+.form-designer__form-top {
+  display: flex;
+  width: 100%;
 }
 .about__clients {
   padding-left: 16px;

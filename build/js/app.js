@@ -319,12 +319,13 @@ var clientSlider = new Swiper('.about__clients-list', {
 
 var topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide'));
 
-topSlidesList.map(function (slide) {
-  slide.addEventListener('click', function (event) {
-    console.log(event.target);
-    event.target.querySelector('.right-slider__slide-desc-wrap').classList.toggle('hide');
-  });
-});
+//topSlidesList.map(slide => {
+//slide.addEventListener('click', event => {
+//console.log(event.target.closest('.right-slider__slide'))
+//event.target.closest('.right-slider__slide').querySelector('.right-slider__slide-desc-wrap').classList.toggle('hide');
+//})
+//})
+
 
 leftSlider.controller.control = rightSlider;
 rightSlider.controller.control = leftSlider;

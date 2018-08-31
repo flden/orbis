@@ -23,12 +23,12 @@ const clientSlider = new Swiper('.about__clients-list', {
 
 const topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide'));
 
-topSlidesList.map(slide => {
-  slide.addEventListener('click', event => {
-    console.log(event.target)
-    event.target.closest('.right-slider__slide').querySelector('.right-slider__slide-desc-wrap').classList.toggle('hide');
-  })
-})
+//topSlidesList.map(slide => {
+  //slide.addEventListener('click', event => {
+    //console.log(event.target.closest('.right-slider__slide'))
+    //event.target.closest('.right-slider__slide').querySelector('.right-slider__slide-desc-wrap').classList.toggle('hide');
+  //})
+//})
 
 
 leftSlider.controller.control = rightSlider;
