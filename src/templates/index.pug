@@ -7,7 +7,8 @@ block content
     .page-content__top
       .container.page-content__wrap
 
-        +page-sidebar('homepage')
+        .page-sidebar__container
+          +sidebar('homepage')
         .content__wrap
           .top-content__container
             .top-slider__container
@@ -27,7 +28,7 @@ block content
 
                       .swiper-slide.left-slider__slide
                         .left-slider__slide-img-wrap
-                          img.left-slider__slide-img(src="./images/1.png")
+                          img.left-slider__slide-img(src="./images/2.jpg")
 
                         .left-slider__slide-desc-wrap
                           .title--first.left-slider__slide-desc-title Аксессуары
@@ -45,7 +46,7 @@ block content
 
                       .swiper-slide.left-slider__slide
                         .left-slider__slide-img-wrap
-                          img.left-slider__slide-img(src="./images/1.png")
+                          img.left-slider__slide-img(src="./images/2.jpg")
 
                         .left-slider__slide-desc-wrap
                           .title--first.left-slider__slide-desc-title Готовые шторы и тюли
@@ -57,6 +58,7 @@ block content
                     .swiper-wrapper.right-slider__wrap
 
                       .swiper-slide.right-slider__slide
+                        .right-slider__slide-mark
                         .right-slider__slide-img-wrap
                           img.right-slider__slide-img(src="./images/img1.png" alt="1")
                         .right-slider__slide-desc-wrap.hide
@@ -64,15 +66,17 @@ block content
                           p.right-slider__slide-desc Мы стараемся воплотить в своих продуктах представления об идеальном дизайне окна – максимум возможностей по минимальной цене.
                           a.btn.right-slider__slide-desc-btn(href="#") подробнее
 
-                      .swiper-slide.right-slider__slide
+                      .swiper-slide.right-slider__slide.open
+                        .right-slider__slide-mark
                         .right-slider__slide-img-wrap
                           img.right-slider__slide-img(src="./images/img3.png" alt="2")
-                        .right-slider__slide-desc-wrap.hide
+                        .right-slider__slide-desc-wrap
                           .title.title--second.right-slider__slide-desc-title Компания «Орбис»
                           p.right-slider__slide-desc Мы стараемся воплотить в своих продуктах представления об идеальном дизайне окна – максимум возможностей по минимальной цене.
                           a.btn.right-slider__slide-desc-btn(href="#") подробнее
 
                       .swiper-slide.right-slider__slide
+                        .right-slider__slide-mark
                         .right-slider__slide-img-wrap
                           img.right-slider__slide-img(src="./images/img2.png" alt="3")
                         .right-slider__slide-desc-wrap.hide
@@ -81,20 +85,19 @@ block content
                           a.btn.right-slider__slide-desc-btn(href="#") подробнее
 
                       .swiper-slide.right-slider__slide
+                        .right-slider__slide-mark
                         .right-slider__slide-img-wrap
                           img.right-slider__slide-img(src="./images/img3.png" alt="4")
                         .right-slider__slide-desc-wrap.hide
                           .title.title--second.right-slider__slide-desc-title Компания «Орбис»
                           p.right-slider__slide-desc Мы стараемся воплотить в своих продуктах представления об идеальном дизайне окна – максимум возможностей по минимальной цене.
                           a.btn.right-slider__slide-desc-btn(href="#") подробнее
-
+              
               include ../blocks/about/about
 
-            section.solutions
-              .solutions__wrap
-                .solutions__title
-                  .solutions__subtitle
-                .solutions__gallery gallery
+            include ../blocks/gallery/gallery
+
+
 
   include ../blocks/form-designer/form-designer
   

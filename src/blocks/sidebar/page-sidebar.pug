@@ -1,12 +1,12 @@
-mixin page-sidebar(homepage)
-  .page-sidebar__container
+mixin sidebar(homepage)
+  .sidebar__container
     if homepage
-      .page-sidebar.page-sidebar--top.page-sidebar--top-fixed
-        .page-sidebar__wrap
-          .page-sidebar__logo
+      .sidebar.sidebar--top.sidebar--top-fixed
+        .sidebar__wrap
+          .sidebar__logo
             include ../logo/logo
        
-          nav.page-sidebar__nav
+          nav.sidebar__nav
             ul
               li Продукция
                 ul
@@ -27,40 +27,40 @@ mixin page-sidebar(homepage)
               li
                 a(href="/") Контакты
 
-          .page-sidebar__phone
+          .sidebar__phone
             include ../phone/phone
-          .page-sidebar__office-location г.Москва, ул.Перерва д.54, пом. VIII
-          .page-sidebar__socials
+          .sidebar__office-location г.Москва, ул.Перерва д.54, пом. VIII
+          .sidebar__socials
             include ../socials/socials
 
-      .page-sidebar__catalog
-        .page-sidebar__catalog-title Каталог продукции
-        ul.menu.page-sidebar__catalog-list
+      .sidebar__catalog
+        .sidebar__catalog-title Каталог продукции
+        ul.menu.sidebar__catalog-list
           li
-            a.page-sidebar__catalog-item(href="#") Карнизы и аксессуары
+            a.sidebar__catalog-item(href="#") Карнизы и аксессуары
           li 
-            a.page-sidebar__catalog-item(href="#") Карнизы трансформеры
+            a.sidebar__catalog-item(href="#") Карнизы трансформеры
           li
-            a.page-sidebar__catalog-item(href="#") Шины алюминиевые 
+            a.sidebar__catalog-item(href="#") Шины алюминиевые 
           li
-            a.page-sidebar__catalog-item(href="#") Плоские алюминиевые профиля
+            a.sidebar__catalog-item(href="#") Плоские алюминиевые профиля
           li
-            a.page-sidebar__catalog-item(href="#") Подхваты магнитные
+            a.sidebar__catalog-item(href="#") Подхваты магнитные
           li
-            a.page-sidebar__catalog-item(href="#") Римские шторы
+            a.sidebar__catalog-item(href="#") Римские шторы
           li
-            a.page-sidebar__catalog-item(href="#") Готовые шторы и тюли
+            a.sidebar__catalog-item(href="#") Готовые шторы и тюли
 
-      .page-sidebar__news
+      .sidebar__news
         
     else
-      .page-sidebar
+      .sidebar
         .container
-          .page-sidebar__wrap
-            .page-sidebar__logo
+          .sidebar__wrap
+            .sidebar__logo
               include ../logo/logo
          
-            nav.page-sidebar__nav
+            nav.sidebar__nav
               ul
                 li Продукция
                   ul
@@ -81,9 +81,9 @@ mixin page-sidebar(homepage)
                 li
                   a(href="/") Контакты
 
-            .page-sidebar__phone
+            .sidebar__phone
               include ../phone/phone
-            .page-sidebar__office-location г.Москва, ул.Перерва д.54, пом. VIII
-            .page-sidebar__socials
+            .sidebar__office-location г.Москва, ул.Перерва д.54, пом. VIII
+            .sidebar__socials
               include ../socials/socials
 
