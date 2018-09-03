@@ -30,6 +30,16 @@ const topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide
   //})
 //})
 
+Array.from(document.querySelectorAll('.solutions__gallery-item-title')).map(item => {
+  item.addEventListener('click', function(event) {
+    Array.from(document.querySelectorAll('.solutions__gallery-item-title')).map(_item => {
+      _item.classList.remove('active');
+    })
+
+    event.target.classList.add('active')
+  })
+})
+
 
 leftSlider.controller.control = rightSlider;
 rightSlider.controller.control = leftSlider;
