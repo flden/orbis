@@ -8,19 +8,23 @@ mixin sidebar(homepage)
        
           nav.sidebar__nav
             ul
-              li 
+              li.expanded
                 a(href="./catalog.html") Продукция
                 ul
                   li
                     a(href="/") Карнизы
                   li
                     a(href="/") Аксессуары
-              li О компании
+              li.expanded
+                a(href="#") О компании
                 ul
                   li
                     a(href="/") О нас
                   li
                     a(href="/") Производство
+
+              li.expanded
+                a(href="#") Интерьерные решения
               li
                 a(href="/") Партнёрам
               li
@@ -63,18 +67,23 @@ mixin sidebar(homepage)
          
             nav.sidebar__nav
               ul
-                li Продукция
+                li.expanded
+                  a(href="./catalog.html") Продукция
                   ul
                     li
                       a(href="/") Карнизы
                     li
                       a(href="/") Аксессуары
-                li О компании
+                li.expanded
+                  a(href="#") О компании
                   ul
                     li
                       a(href="/") О нас
                     li
                       a(href="/") Производство
+
+                li.expanded
+                  a(href="#") Интерьерные решения
                 li
                   a(href="/") Партнёрам
                 li

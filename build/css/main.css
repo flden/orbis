@@ -242,6 +242,11 @@ p {
 .offer-form__info {
   width: 30%;
 }
+.address__prod-title {
+  font-size: 21px;
+  font-weight: 500;
+  margin-bottom: 16px;
+}
 .page-header__wrap {
   display: flex;
   flex-direction: row;
@@ -274,6 +279,13 @@ p {
 .sidebar__nav ul {
   margin: 0;
   padding: 0;
+}
+.sidebar__nav ul li.expanded > a::after {
+  content: "►";
+  transform: rotate(90deg);
+  display: inline-block;
+  margin-left: 8px;
+  font-size: 12px;
 }
 .sidebar__nav ul li {
   list-style: none;

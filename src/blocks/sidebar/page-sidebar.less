@@ -30,11 +30,21 @@
   margin: 0;
   padding: 0;
 
+  & li.expanded > a::after {
+    content: "►";
+    transform: rotate(90deg);
+    display: inline-block;
+    margin-left: 8px;
+    font-size: 12px;
+  }
+
   & li {
     list-style: none;
     font-size: 18px;
     font-weight: 500;
     margin-bottom: 16px;
+
+    
     
     & a {
       color: #212121;

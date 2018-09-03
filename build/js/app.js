@@ -320,16 +320,17 @@ var clientSlider = new Swiper('.about__clients-list', {
 var topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide'));
 
 window.onscroll = function () {
-  if (window.scrollY >= 1525 - window.innerHeight) {
+  var height = 1200 - window.innerHeight;
+  if (window.scrollY >= height) {
     console.log(123);
     document.querySelector('.sidebar--top').style.position = 'relative';
-    document.querySelector('.sidebar--top').style.top = 1525 - window.innerHeight + 'px';
+    document.querySelector('.sidebar--top').style.top = height + 'px';
     document.querySelector('.sidebar__catalog').style.marginTop = '32px';
   }
-  if (window.scrollY < 1525 - window.innerHeight) {
+  if (window.scrollY < height) {
     document.querySelector('.sidebar--top').style.position = 'fixed';
     document.querySelector('.sidebar--top').style.top = 0;
-    document.querySelector('.sidebar__catalog').style.marginTop = '1525px';
+    document.querySelector('.sidebar__catalog').style.marginTop = '1200px';
   }
 };
 
