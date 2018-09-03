@@ -1,0 +1,37 @@
+.breads {
+
+  &__list {
+    display: flex;
+    margin: 0;
+    padding: 0;
+  }
+
+  &__item {
+    list-style: none;
+    font-size: 13px;
+
+    &:first-child {
+      font-size: 0;
+      width: 16px;
+      height: 16px;
+      background-color: red;
+    }
+    
+    &:not(:last-child) {
+      margin-right: 8px;
+
+      &::after {
+        content: ">";
+        display: inline-block;
+        color: #212121;
+        transform: translateX(8px);
+        width: 16px;
+        font-size:13px;
+        height: 16px;
+      }
+    }
+
+  }
+
+ 
+}

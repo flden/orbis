@@ -319,6 +319,20 @@ var clientSlider = new Swiper('.about__clients-list', {
 
 var topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide'));
 
+window.onscroll = function () {
+  if (window.scrollY >= 1525 - window.innerHeight) {
+    console.log(123);
+    document.querySelector('.sidebar--top').style.position = 'relative';
+    document.querySelector('.sidebar--top').style.top = 1525 - window.innerHeight + 'px';
+    document.querySelector('.sidebar__catalog').style.marginTop = '32px';
+  }
+  if (window.scrollY < 1525 - window.innerHeight) {
+    document.querySelector('.sidebar--top').style.position = 'fixed';
+    document.querySelector('.sidebar--top').style.top = 0;
+    document.querySelector('.sidebar__catalog').style.marginTop = '1525px';
+  }
+};
+
 //topSlidesList.map(slide => {
 //slide.addEventListener('click', event => {
 //console.log(event.target.closest('.right-slider__slide'))

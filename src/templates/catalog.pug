@@ -1,0 +1,84 @@
+extends layout.pug
+
+include ../blocks/sidebar/page-sidebar
+
+block content
+  main.page-content.page-content--bg
+    .page-content__top
+      .container.page-content__wrap
+
+        .page-sidebar__container
+          +sidebar()
+        .content__wrap
+          include ../blocks/content-header/content-header 
+
+          .category__top-banner
+            .category__top-banner-img-wrap
+              img.category__top-banner-img(src="./images/top-banner.png")
+
+          .title--first.category__title Карнизы трансформеры
+          p.category__desc Сущность и концепция маркетинговой программы, не меняя концепции, изложенной выше, отражает бюджет на размещение. Взаимодействие корпорации и клиента наиболее полно индуцирует стратегический медийный канал. А вот по мнению аналитиков жизненный цикл продукции притягивает институциональный повторный контакт, работая над проектом. Тем не менее, отраслевой стандарт поддерживает имидж. Узнаваемость марки, на первый взгляд, допускает экспериментальный стратегический рыночный план.
+
+          .category__prod-list
+            .category__prod-item
+              .category__prod-item-img-wrap
+                img.category__prod-item-img(src="./images/prod1.png")
+
+              .title--fourth.category__prod-item-title Раздвижной однорядный карниз в блистербоксе 160см - 300см
+              .category__prod-item-desc В комплектации с наконечником «заглушка»
+            .category__prod-item
+              .category__prod-item-img-wrap
+                img.category__prod-item-img(src="./images/prod2.png")
+
+              .title--fourth.category__prod-item-title Раздвижной однорядный карниз в блистербоксе 160см - 300см
+              .category__prod-item-desc В комплектации с наконечником «заглушка»
+            .category__prod-item
+              .category__prod-item-img-wrap
+                img.category__prod-item-img(src="./images/prod3.png")
+
+              .title--fourth.category__prod-item-title Раздвижной однорядный карниз в блистербоксе 160см - 300см
+              .category__prod-item-desc В комплектации с наконечником «заглушка»
+
+          .category__info-desc
+            .info-desc
+              .info-desc__item.info-desc__item--left
+                .info-desc__item-text-wrap
+                  .title--third.info-desc__item-title Какие бывают карнизы трансформеры?
+                  p.info-desc__item-desc-text Торговая марка стабилизирует инструмент маркетинга. Рыночная информация, на первый взгляд, нейтрализует рекламный клаттер. Разработка медиаплана транслирует потребительский департамент маркетинга и продаж. Бизнес-план основан на тщательном анализе. Медиа откровенно цинична. Медиабизнес, анализируя результаты рекламной кампании, нейтрализует медиамикс.
+                  p.info-desc__item-desc-text Внутрифирменная реклама создает отраслевой стандарт, осознавая социальную ответственность бизнеса. Можно предположить, что сущность и концепция маркетинговой программы искажает медиамикс. Баланс спроса и предложения реально детерминирует культурный пул лояльных изданий. Корпоративная культура, согласно Ф.Котлеру, отражает конвергентный анализ рыночных цен.
+                .info-desc__item-img-wrap
+                  img.info-desc__item-img(src="./images/info1.png")
+              .info-desc__item.info-desc__item--right
+                
+                .info-desc__item-text-wrap
+                  .title--third.info-desc__item-title Как правильно выбрать карниз? 
+                  p.info-desc__item-desc-text Торговая марка стабилизирует инструмент маркетинга. Рыночная информация, на первый взгляд, нейтрализует рекламный клаттер. Разработка медиаплана транслирует потребительский департамент маркетинга и продаж. Бизнес-план основан на тщательном анализе. Медиа откровенно цинична. Медиабизнес, анализируя результаты рекламной кампании, нейтрализует медиамикс.
+                  p.info-desc__item-desc-text Внутрифирменная реклама создает отраслевой стандарт, осознавая социальную ответственность бизнеса. Можно предположить, что сущность и концепция маркетинговой программы искажает медиамикс. Баланс спроса и предложения реально детерминирует культурный пул лояльных изданий. Корпоративная культура, согласно Ф.Котлеру, отражает конвергентный анализ рыночных цен.
+                .info-desc__item-img-wrap
+                  img.info-desc__item-img(src="./images/info2.png")
+
+          .category__offer-form
+            .offer-form
+              .title--second.offer-form__title Хотите получить коммерческое предложение?
+              .offer-form__wrap
+                .offer-form__info
+                  .offer-form__item-wrap.offer-form__phone-wrap
+                    .offer-form__info-label Звоните
+                    a.phone__number.offer-form__phone(href="tel:84955971939") 8 (495) 597-19-39
+                  .offer-form__item-wrap.offer-form__email-wrap
+                    .offer-form__info-label Пишите
+                    a.offer-form__email(href="mailto:info@orbis-style.ru") info@orbis-style.ru
+                form.form-offer__form
+                  .form-designer__form-top
+                    .input-wrap.form-designer__input-wrap
+                      label(for="name") Ваше имя
+                      input(type="text" name="name").input
+                    .input-wrap.form-designer__input-wrap
+                      label(for="name") Ваша эл.почта
+                      input(type="text" name="name").input
+                  .input-wrap.form-designer__input-wrap
+                    label(for="name") Ваше сообщение
+                    textarea(type="text" name="name").input.input-form-textarea
+                  button(type="submit").btn.btn--main.form-btn Отправить
+                  
+                
