@@ -30,7 +30,7 @@ a {
   color: #55C6D1;
 }
 a:visited {
-  color: #55C6D1;
+  color: inherit;
 }
 p {
   line-height: 1.4;
@@ -318,42 +318,64 @@ p {
   height: 100%;
 }
 .sidebar__logo {
-  margin-bottom: 80px;
+  margin-bottom: 50px;
 }
-.sidebar__nav ul {
+.sidebar__nav > ul {
   margin: 0;
   padding: 0;
 }
-.sidebar__nav ul li.expanded > a::after {
+.sidebar__nav > ul li.expanded > span {
+  cursor: pointer;
+  position: relative;
+}
+.sidebar__nav > ul li.expanded > span::after {
   content: "►";
   transform: rotate(90deg);
+  position: absolute;
+  top: 5px;
   display: inline-block;
+  vertical-align: middle;
   margin-left: 8px;
   font-size: 12px;
+  transition: 0.3s ease-in-out;
 }
-.sidebar__nav ul li {
+.sidebar__nav > ul li.expanded > ul {
+  padding: 0;
+  margin: 0;
+}
+.sidebar__nav > ul li.expanded.unfold ul {
+  margin-top: 8px;
+}
+.sidebar__nav > ul li.expanded.unfold > span::after {
+  color: #55C6D1;
+  transform: rotate(0deg);
+  top: 3px;
+}
+.sidebar__nav > ul li {
   list-style: none;
   font-size: 18px;
   font-weight: 500;
   margin-bottom: 16px;
+  padding: 0px;
 }
-.sidebar__nav ul li a {
+.sidebar__nav > ul li a {
   color: #212121;
 }
-.sidebar__nav ul li ul {
-  padding-top: 16px;
+.sidebar__nav > ul li ul {
+  /*padding-top: 16px;*/
 }
-.sidebar__nav ul li ul li {
+.sidebar__nav > ul li ul li {
   margin-bottom: 5px;
+  padding: 0;
 }
-.sidebar__nav ul li ul li:last-child {
+.sidebar__nav > ul li ul li:last-child {
   margin-bottom: 0;
 }
-.sidebar__nav ul li ul li a {
+.sidebar__nav > ul li ul li a {
   color: #55C6D1;
   font-size: 14px;
 }
-.sidebar__nav ul li a {
+.sidebar__nav > ul li a {
   text-decoration: none;
 }
 .sidebar__catalog-list {
@@ -365,7 +387,7 @@ p {
 }
 .sidebar__phone {
   margin-top: 160px;
-  margin-bottom: 150px;
+  margin-bottom: 90px;
 }
 .sidebar__socials {
   margin-top: 16px;
@@ -512,6 +534,9 @@ p {
   color: #ffffff;
   border-color: inherit;
   display: inline-block;
+}
+.btn--light:visited {
+  color: #ffffff;
 }
 .btn:hover {
   transition: 0.3s;
