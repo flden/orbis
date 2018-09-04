@@ -25,19 +25,26 @@ const topSlidesList = Array.from(document.querySelectorAll('.right-slider__slide
 
 
 window.onscroll = function(){
-  var height = 1200 - window.innerHeight
+  var height = 1190 - window.innerHeight
   if (window.scrollY >= height) {
-    console.log(123)
     document.querySelector('.sidebar--top').style.position = 'relative';
     document.querySelector('.sidebar--top').style.top = height+'px';
     document.querySelector('.sidebar__catalog').style.marginTop = '32px';
+    document.querySelector('.page-content__top').style.backgroundAttachment = 'unset';
+    document.querySelector('.page-content__top').style.backgroundPositionY = height + 'px';
   }
   if(window.scrollY < height) {
     document.querySelector('.sidebar--top').style.position='fixed';
     document.querySelector('.sidebar--top').style.top=0;
     document.querySelector('.sidebar__catalog').style.marginTop = '1200px';
+    document.querySelector('.page-content__top').style.backgroundAttachment = 'fixed';
+    document.querySelector('.page-content__top').style.backgroundPositionY = '0px';
   }
 }
+
+const sidebarNav = document.querySelector('.sidebar__nav');
+
+
 
 //topSlidesList.map(slide => {
   //slide.addEventListener('click', event => {

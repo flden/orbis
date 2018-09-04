@@ -4,8 +4,8 @@ body {
   font-family: 'Montserrat', sans-serif;
   font-size: 14px;
   color: #212121;
-  background-image: url("../images/top-bg.png");
-  background-repeat: no-repeat;
+  /*background-image: url("../images/top-bg.png");*/
+  /*background-repeat: no-repeat;*/
 }
 
 html *{
@@ -100,11 +100,17 @@ p {
 .page-content__top {
   width: 100%;
   overflow: hidden;
+  background-image: url("../images/top-bg.png");
+  background-attachment: fixed;
+  /*background-repeat: no-repeat;*/
+
+  &--nofixedbg {
+    background-attachment: unset;
+    background-repeat: no-repeat;
+  }
 }
 
 .content__wrap {
-  padding-left: 16px;
-  border-left: 1px solid #ededed;
   width: 78%;
 }
 
@@ -162,6 +168,8 @@ p {
   }
 
   &__slide-text-wrap {
+    visibility: hidden;
+    opacity: 0;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.2);
     width: 100%;
@@ -173,6 +181,7 @@ p {
     flex-direction: column;
     text-align: center;
     color: #ffffff;
+    transition: 0.3s ease-in-out;
 
     .right-slider__slide-desc-btn {
       color: #ffffff;
@@ -211,6 +220,12 @@ p {
     font-weight: 400;
   }
 
+}
+
+.right-slider__slide-img-wrap:hover + .right-slider__slide-text-wrap,
+.right-slider__slide-text-wrap:hover{
+  visibility: visible;
+  opacity: 1;
 }
 
 .right-slider__slide.open {
@@ -362,4 +377,10 @@ p {
   margin-left: 72px;
 }
 
+.form-btn {
+  margin: 32px 0;
+}
 
+.form-designer__input-wrap {
+  margin: 16px 0;
+}
